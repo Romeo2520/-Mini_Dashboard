@@ -11,7 +11,7 @@
 </div>
 <div class="container">
     
-  <h1 class="flex justify-center ">Liste des Cryptos</h1>
+  <h1 class="text-2xl ">Liste des Cryptos</h1>
 
 
   <table *ngIf="cryptos.length > 0; else loading">
@@ -25,22 +25,19 @@
     </thead>
     <tbody>
       <tr *ngFor="let crypto of cryptos">
-        <td class="flex gap-6 items-center ">
-          <img [src]="crypto.image" width="60" alt="{{ crypto.name }}">
-         <strong>{{ crypto.name }}</strong>
+        <td class="name">
+          <div><img class="img" [src]="crypto.image" width="60" alt="{{ crypto.name }}"></div> 
+          <div><strong class="named">{{ crypto.name }}</strong></div>
         </td>
         <td>{{ crypto.current_price | number:'1.2-2' }}</td>
         <td [ngClass]="{'positive': crypto.price_change_percentage_24h > 0, 'negative': crypto.price_change_percentage_24h < 0}">
           {{ crypto.price_change_percentage_24h | number:'1.2-4' }} %
         </td>
-
       </tr>
     </tbody>
   </table>
 
-
-
-  <ng-template #loading>
+<ng-template #loading>
     <p>Chargement des cryptos...</p>
-  </ng-template>
+</ng-template>
 </div>
