@@ -1,5 +1,5 @@
 # Crypto Dashbord
-**Description**
+## **Description**
 
 Ce projet est une interface web interactive développée avec Angular, permettant d'afficher en temps réel la liste des cryptomonnaies avec leur nom, prix actuel et variation en pourcentage sur 24h. Les données sont récupérées dynamiquement via un service Angular qui interroge l'API de coingecko. En plus du tableau des cryptos, un graphique dynamique (avec ApexCharts) permet de visualiser l’évolution des prix, offrant une expérience fluide et intuitive aux utilisateurs. L’interface utilise Tailwind CSS pour un design épuré et responsive.
 
@@ -10,7 +10,7 @@ git clone https://github.com/Romeo2520/-Mini_Dashboard.git
 cd -Mini_Dashboard
 pnpm install
 ```
-## Compilation et lancement en local
+## Lancement en local
 ```zsh
 ng serve
 ```
