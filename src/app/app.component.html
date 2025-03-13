@@ -1,0 +1,46 @@
+
+<div class="container">
+  <div *ngIf="loading" class="flex justify-center items-center">
+    <apx-chart [chart]="chartOptions.chart"
+               [series]="chartOptions.series"
+               [xaxis]="chartOptions.xaxis"
+               [title]="chartOptions.title"
+               class="">
+    </apx-chart>
+  </div>
+</div>
+<div class="container">
+    
+  <h1 class="flex justify-center ">Liste des Cryptos</h1>
+
+
+  <table *ngIf="cryptos.length > 0; else loading">
+  <!-- {{ cryptos | json }} -->
+  <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Prix Actuel ($)</th>
+        <th>Variation 24h (%)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let crypto of cryptos">
+        <td class="flex gap-6 items-center ">
+          <img [src]="crypto.image" width="60" alt="{{ crypto.name }}">
+         <strong>{{ crypto.name }}</strong>
+        </td>
+        <td>{{ crypto.current_price | number:'1.2-2' }}</td>
+        <td [ngClass]="{'positive': crypto.price_change_percentage_24h > 0, 'negative': crypto.price_change_percentage_24h < 0}">
+          {{ crypto.price_change_percentage_24h | number:'1.2-4' }} %
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+
+
+
+  <ng-template #loading>
+    <p>Chargement des cryptos...</p>
+  </ng-template>
+</div>

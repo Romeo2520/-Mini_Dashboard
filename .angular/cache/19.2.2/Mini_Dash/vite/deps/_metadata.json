@@ -1,0 +1,64 @@
+{
+  "hash": "446617aa",
+  "configHash": "ffdc3967",
+  "lockfileHash": "b234015a",
+  "browserHash": "fbd0e9b9",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../../node_modules/.pnpm/@angular+common@19.2.2_@angular+core@19.2.2_rxjs@7.8.2_zone.js@0.15.0__rxjs@7.8.2/node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "12a6abad",
+      "needsInterop": false
+    },
+    "@angular/common/http": {
+      "src": "../../../../../../node_modules/.pnpm/@angular+common@19.2.2_@angular+core@19.2.2_rxjs@7.8.2_zone.js@0.15.0__rxjs@7.8.2/node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "0d5ebf18",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../../node_modules/.pnpm/@angular+core@19.2.2_rxjs@7.8.2_zone.js@0.15.0/node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "636a5aae",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/.pnpm/@angular+platform-browser@19.2.2_@angular+common@19.2.2_@angular+core@19.2.2_rxjs@7.8.2_f62ff62d6cc51ab5fea9a100c34f1148/node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "368fb705",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../../node_modules/.pnpm/@angular+router@19.2.2_@angular+common@19.2.2_@angular+core@19.2.2_rxjs@7.8.2_zone.js@0_d33a9f8f9192f7834458485fce338590/node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "fe38bc6e",
+      "needsInterop": false
+    },
+    "ng-apexcharts": {
+      "src": "../../../../../../node_modules/.pnpm/ng-apexcharts@1.15.0_@angular+common@19.2.2_@angular+core@19.2.2_rxjs@7.8.2_zone.js@0.1_2f4c6885ce8e4eff82e408e4111d8c07/node_modules/ng-apexcharts/fesm2022/ng-apexcharts.mjs",
+      "file": "ng-apexcharts.js",
+      "fileHash": "2a58089b",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-5U5A2VNX": {
+      "file": "chunk-5U5A2VNX.js"
+    },
+    "chunk-J7QZJXZX": {
+      "file": "chunk-J7QZJXZX.js"
+    },
+    "chunk-INW3OCK6": {
+      "file": "chunk-INW3OCK6.js"
+    },
+    "chunk-2SOHPORG": {
+      "file": "chunk-2SOHPORG.js"
+    },
+    "apexcharts.esm-NYVISB2M": {
+      "file": "apexcharts__esm-NYVISB2M.js"
+    },
+    "chunk-WDMUDEB6": {
+      "file": "chunk-WDMUDEB6.js"
+    }
+  }
+}
